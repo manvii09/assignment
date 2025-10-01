@@ -1,0 +1,184 @@
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --text: #22223b;
+  --accent: #2563eb;
+  --accent-2: #38bdf8;
+  --danger: #ef4444;
+  --shadow: 0 4px 24px rgba(37, 99, 235, 0.08);
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #e0e7ef 0%, #f5f7fa 100%);
+  color: var(--text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 420px;
+  transition: box-shadow 0.3s, transform 0.2s;
+  border: 1px solid #e5e7eb;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(37,99,235,0.16);
+  transform: translateY(-2px) scale(1.01);
+}
+
+.button, button {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.button:hover, button:hover {
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  box-shadow: 0 4px 16px rgba(37,99,235,0.12);
+}
+
+.option {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #f1f5f9;
+  color: var(--text);
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  transition: transform 0.1s, background 0.2s, border 0.2s;
+}
+
+.option:hover {
+  transform: scale(1.03);
+  background: #e0e7ef;
+  border-color: var(--accent-2);
+}
+
+.pill {
+  background: var(--accent-2);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.3em 1em;
+  font-size: 0.95em;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(56,189,248,0.08);
+}
+
+.center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.top {
+  margin-top: 1rem;
+}
+
+h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f1f5f9;
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.question {
+  font-size: 1.15rem;
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+}
+
+.bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.bar-label {
+  min-width: 120px;
+}
+
+.bar-track {
+  flex: 1;
+  height: 12px;
+  background: #e0e7ef;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.bar-percent {
+  width: 48px;
+  text-align: right;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.input-section {
+  margin-bottom: 2rem; /* Adds space below the options block */
+}
